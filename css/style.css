@@ -350,13 +350,14 @@ footer ul li i{
 }
 .product{
     display: flex;
-    height: 400px;
+    /* height: 400px; */
+    padding: 0 0 50px;
 }
 .product .image{
     position: relative;
     overflow: hidden;
     margin: 0 100px 0 0;
-    height: 100%;
+    height: 400px;
     width: 400px;
     box-shadow: 0 8px 5px -6px rgba(0,0,0,.5);
 }
@@ -461,4 +462,39 @@ footer ul li i{
 .product form button[name="add-cart"]{
     background-color: #6abd58;
     color: #fff;
+}
+.company{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+.company .detail{
+    display: flex;
+    align-items: center;
+}
+.company .detail .image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #6abd58;
+    box-shadow: 0 0 2px rgba(0,0,0,.15);
+    overflow: hidden;
+    margin: 0 20px 0 0;
+}
+.company .detail .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.company .detail .desc a:hover{
+    text-decoration: underline;
+}
+.company .detail .desc a:last-child{
+    color: #555;
+    font-size: .8em;
 }
