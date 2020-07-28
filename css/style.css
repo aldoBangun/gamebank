@@ -468,6 +468,7 @@ footer ul li i{
     justify-content: space-between;
     align-items: center;
     height: 50vh;
+    text-transform: capitalize;
 }
 .company .detail{
     display: flex;
@@ -497,4 +498,29 @@ footer ul li i{
 .company .detail .desc a:last-child{
     color: #555;
     font-size: .8em;
+}
+.company .stats a{
+    margin: 0 10px 0 0;
+    font-size: .8em;
+}
+.company .stats a span{
+    font-weight: 600;
+}
+.company .stats a:nth-child(1) i{color: #f55;}
+.company .stats a:nth-child(2) i{color: #595;}
+.company .stats a span.percent{
+    display: inline-block;
+    background-color: #f55;
+    width: 20px;
+    height: 10px;
+    position: relative;
+}
+.company .stats a span.percent::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    background-color: #6abd58;
 }
