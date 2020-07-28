@@ -282,6 +282,7 @@ nav ul.user li{
 .browse .card .card-body p a{
     font-size: 1.1em;
     color: #000;
+    text-decoration: underline;
 }
 .browse .card-body a.cat{
     color: #fff;
@@ -433,11 +434,31 @@ footer ul li i{
     height: 50px;
     min-width: 50px;
     padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 7px 5px -6px rgba(0,0,0,.2);
+    font-weight: 600;
+    margin: 0 10px 0 0;
 }
 .product form button[name="wishlist"]{
-
+    font-size: 1.2em;
+    color: rgba(255, 100, 100, .5);
+}
+.product form button[name="wishlist"]:hover{
+    color: rgba(255, 100, 100, 1);
 }
 .product form button[name="buy"]{
+    border: 2px solid #6abd58;
+    color: #6abd58;
+    background-color: #fff;
 }
-.product form button[name="add-chart"]{
+.product form button[name="buy"]:hover,
+.product form button[name="add-cart"]:hover{
+    filter: saturate(.7);
+}
+.product form button[name="add-cart"]{
+    background-color: #6abd58;
+    color: #fff;
 }
