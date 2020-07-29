@@ -528,3 +528,51 @@ footer ul li i{
     width: 90%;
     background-color: #6abd58;
 }
+.user-rate .rating{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.user-rate .rating h1{
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+}
+.user-rate .diagram .rate{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+.user-rate .diagram .rate span:last-child{
+    position: relative;
+    flex: 1;
+    height: 10px;
+    margin: 0 0 0 20px;
+}
+.user-rate .diagram .rate span:last-child::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(242, 245, 83);
+    height: 100%;
+    z-index: 2;
+    border-radius: 5px;
+}
+.user-rate .diagram .rate:nth-child(1) span:last-child::before{
+    width: 90%;
+}
+.user-rate .diagram .rate:nth-child(2) span:last-child::before{
+    width: 50%;
+}
+.user-rate .diagram .rate:nth-child(3) span:last-child::before{
+    width: 5%;
+}
+.user-rate .diagram .rate:nth-child(4) span:last-child::before{
+    width: 20%;
+}
+.user-rate .diagram .rate:nth-child(5) span:last-child::before{
+    width: 15%;
+}
