@@ -398,12 +398,13 @@ footer ul li i{
     flex-direction: column;
     justify-content: space-between;
 }
-.product form h3{
+.detail-product h3{
     margin: 0 0 30px;
     position: relative;
     display: inline-block;
+    text-transform: capitalize;
 }
-.product form h3::before{
+.detail-product h3::before{
     content: '';
     position: absolute;
     bottom: -4px;
@@ -470,7 +471,7 @@ footer ul li i{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     text-transform: capitalize;
 }
 .company .detail{
