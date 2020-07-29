@@ -287,6 +287,9 @@ nav ul.user li{
     color: #000;
     text-decoration: underline;
 }
+.browse .card .card-body p a:hover{
+    color: #55f;
+}
 .browse .card-body a.cat{
     color: #fff;
     font-size: .75em;
@@ -319,6 +322,12 @@ nav ul.user li{
 .browse .card-body button i{
     margin: 0 5px 0 0;
 }
+.browse .nav{
+    cursor: pointer;
+}
+.browse .nav:hover{
+    opacity: .8;
+}
 footer{
     background-color: #555;
     height: 50vh;
@@ -349,7 +358,7 @@ footer ul li i{
     width: 24px;
 }
 .detail-product{
-    padding: 130px 150px 50px;
+    padding: 130px 150px 0;
 }
 .product{
     display: flex;
@@ -587,7 +596,7 @@ footer ul li i{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 80vh;
     align-items: center;
     padding: 100px 0 0;
 }
@@ -627,4 +636,17 @@ footer ul li i{
 .user-review .card .card-info .rating{
     color: #ee5;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: .6em;
+}
+.browse.detail-product{
+    padding: 50px 150px 100px;
+}
+.browse.detail-product h3{
+    margin: 0;
+}
+.browse.detail-product .content .card .card-body a{
+    text-decoration: none;
+}
+.browse.detail-product .content .card .card-body a:hover{
+    text-decoration: underline;
 }
